@@ -299,9 +299,7 @@ struct dt_info *dt_from_blob(const char *fname);
 void dt_to_source(FILE *f, struct dt_info *dti);
 struct dt_info *dt_from_source(const char *f);
 
-/* YAML source */
 
-void dt_to_yaml(FILE *f, struct dt_info *dti);
 
 /* FS trees */
 

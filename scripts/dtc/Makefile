@@ -14,7 +14,6 @@ HOST_EXTRACFLAGS := -I$(src)/libfdt
 ifeq ($(shell pkg-config --exists yaml-0.1 2>/dev/null && echo yes),)
 HOST_EXTRACFLAGS += -DNO_YAML
 else
-dtc-objs	+= yamltree.o
 HOSTLDLIBS_dtc	:= $(shell pkg-config yaml-0.1 --libs)
 endif
 
